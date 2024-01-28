@@ -26,6 +26,7 @@ Welcome to the Digital Clock project, an engaging exploration into JavaScript ti
 2. Explore the projects by opening the `index.html` file in your browser.
 3. Dive into individual projects by clicking on the provided links..
 
+
 ## Takeaway:
 
 The Digital Clock project is a perfect starting point to grasp the basics of handling time in JavaScript. Whether you're a coding beginner or looking to reinforce your skills, this project offers an insightful journey into the world of dynamic web applications. Happy coding! 🕒
