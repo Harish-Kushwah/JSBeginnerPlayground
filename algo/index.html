@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="res.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.1.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <script
+      type="text/javascript"
+      src="https://cdn.canvasjs.com/canvasjs.min.js"
+      defer
+    ></script>
+    <script src="app.js" defer></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="main">
+      <nav>
+        <h2 id="logo">AlgoExpert</h2>
+        <div class="nav-part2">
+          <h4>Store</h4>
+          <h4>Courses</h4>
+          <h4>Career</h4>
+          <h4>Account</h4>
+          <i class="ri-menu-line"></i>
+        </div>
+      </nav>
+      <div class="content">
+        <div class="left">
+          <div class="form">
+            <div class="inputs">
+              <label for="">Enter numbers</label>
+              <input type="text" name="numbers" id="numbers" class="num1" />
+            </div>
+
+            <div class="inputs">
+              <label for="">Enter Head</label>
+              <input type="text" name="head" id="head" class="head" />
+            </div>
+
+            <div class="inputs">
+              <label for="">Select Algorithm</label>
+              <div class="list">
+                <select name="algo" id="algo">
+                  <option value="FCFS">FCFS</option>
+                  <option value="SCAN">SCAN</option>
+                  <option value="CSCAN">CSCAN</option>
+                </select>
+                <button type="button" class="btn signup-btn">Submit</button>
+              </div>
+            </div>
+            <div class="ans">
+              <h4 class="seek"></h4>
+            </div>
+          </div>
+        </div>
+
+        <div class="right">
+          <section id="chartContainer" class="rotate"></section>
+        </div>
+      </div>
+
+      <footer></footer>
+    </div>
+  </body>
+</html>

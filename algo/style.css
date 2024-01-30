@@ -1,0 +1,169 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+html , body{
+    height: 100%;
+    width: 100%;
+}
+.main{
+    height: 100%;
+    width: 100%;
+    position: relative;
+
+}
+#logo{
+    margin-left: 10px;
+}
+nav{
+    height: 60px;
+    width: 100%;
+    border-bottom: 1px solid #dadada;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+nav i {
+    font-size: 1.2vw;
+    cursor: pointer;
+    display: none;
+   
+}
+.nav-part2{
+    width: 50%;
+    display:flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+}
+nav h2{
+    font-size: 30px;
+    font-weight: 700;
+}
+nav h4{
+    font-size: 13px ;
+    padding: 10px;
+
+}
+
+.content{
+    height: calc(100% - 60px);
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+}
+.left{
+    height:100%;
+    width: 50%;
+
+    padding: 7vw 8vw;
+     padding: 0px;
+
+}
+.right{
+    height: 100%;
+    width: 50%;
+}
+.rotate {
+   border :1px solid black;
+   width: calc(100% - 20px);
+   height: calc(100% - 20px);
+   margin: 10px;
+   border-radius: 3px;
+    
+}
+
+.form{
+    display: flex;
+   
+    text-align: center;
+    background:rgb(239, 239, 245);
+    width: calc(100%-40px);
+    height: 100%;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+ }
+.inputs{
+    display: flex;
+    margin: 5px;
+    flex-direction: column;
+    
+    align-items: center;
+    text-align: center;
+}
+input{
+    height: 2rem;
+    border-radius: 2px;
+    width: 250px;
+  
+}
+.list{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+ }
+ #algo{
+    width: 100px;
+    height: 30px;
+}
+.btn{
+    margin: 1rem;
+    width: 4rem;
+    height: 2rem;
+    border:none;
+    background-color: rgb(48, 48, 232);
+    color: white;
+    border-radius: 3px;
+    cursor: pointer;
+    font-weight: 400;
+}
+.ans{
+    /* height: 0.5rem;
+    width: 0.5rem; */
+    /* border: 1px solid black; */
+}
+@media (max-width:600px) {
+    nav{
+        height: 60px;
+    }
+
+    nav h2{
+        font-size: 6vw;
+    }
+
+    nav h4{
+        display: none;
+
+    }
+    nav i {
+        display: block;
+        font-size: 6vw;
+        margin-right: 10px;
+       
+    }
+    .nav-part2{
+        justify-content: flex-end;
+    }
+    .content{
+        flex-wrap: wrap;
+    }
+
+    .left{
+        height: 40%;
+        width: 100%;
+        padding: 7vw 8vw;
+         padding: 10px;
+    }
+    .right{
+        height: 60%;
+        width: 100%;
+    }
+    .signup-section{
+      flex-wrap: wrap;
+
+    }
+}
