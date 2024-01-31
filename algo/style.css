@@ -1,3 +1,4 @@
+  @import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,200;0,300;1,200&family=Poppins:wght@300;400&display=swap');
 *{
     margin: 0px;
     padding: 0px;
@@ -111,20 +112,35 @@ input{
     height: 2rem;
     border-radius: 2px;
     width: 250px;
+    border: 1px solid navy;
+    padding-left: 2px;
+
   
 }
+
 .list{
     display: flex;
     align-items: center;
     justify-content: center;
  }
+ #direction{
+    width: 65px;
+    height: 30px;
+    margin-left: 3px;
+    display: none;
+    cursor: pointer;
+
+ }
  #algo{
     width: 100px;
     height: 30px;
+    cursor: pointer;
+
 }
 .btn{
-    margin: 1rem;
-    width: 4rem;
+    /* margin: 1rem; */
+    margin-left: 0.5rem;
+    width: 4.5rem;
     height: 2rem;
     border:none;
     background-color: rgb(48, 48, 232);
@@ -137,6 +153,37 @@ input{
     /* height: 0.5rem;
     width: 0.5rem; */
     /* border: 1px solid black; */
+    margin-top: 5px;
+}
+.head{
+    width: 120px;
+}
+.head-inputs{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 5px;
+    justify-content: center;
+    align-items: center;
+}
+.num-inputs{
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    /* border: 2px solid black; */
+}
+.algo-title{
+    margin-bottom: 5%;
+    color: navy;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+
+}
+@media (max-height:400px) {
+    .algo-title{
+        margin-bottom: 1px;
+    }
+    
 }
 @media (max-width:600px) {
     nav{
@@ -171,11 +218,14 @@ input{
          padding: 10px;
     }
     .right{
-        height: 60%;
+        height: calc(60% - 25px);
         width: 100%;
     }
     .signup-section{
       flex-wrap: wrap;
 
+    }
+    .algo-title{
+        margin-bottom: 1rem;
     }
 }
