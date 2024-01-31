@@ -4,7 +4,6 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>AlgoExpert</title>
-    <link rel="stylesheet" href="res.css" />
     <link
       href="https://cdn.jsdelivr.net/npm/remixicon@4.1.0/fonts/remixicon.css"
       rel="stylesheet"
@@ -34,7 +33,7 @@
 
       <div class="content">
         <div class="left">
-          <div class="form">
+          <form class="form" >
             <h3 class="algo-title">Disk Scheduling Algorithm Calculator</h3>
             <div class="inputs">
               <!-- <label for="">Enter Numbers</label> -->
@@ -65,10 +64,16 @@
             <div class="inputs">
               <!-- <label for="">Select Algorithm</label> -->
               <div class="list">
+                
                 <select name="algo" id="algo">
+                  <option value="">Select Algorithm</option>
                   <option value="FCFS">FCFS</option>
                   <option value="SCAN">SCAN</option>
                   <option value="CSCAN">CSCAN</option>
+                  <option value="LOOK">LOOK</option>
+                  <option value="CLOOK">CLOOK</option>
+                  <option value="SSTF">SSTF</option>
+                  <option value="ALL">ALL</option>
                 </select>
 
                 <select name="direction" id="direction">
@@ -76,13 +81,19 @@
                   <option value="RIGHT">Right</option>
                 </select>
 
-                <button type="button" class="btn signup-btn">Submit</button>
               </div>
+
+            </div>
+            <div class="inputs btn-group">
+
+            <button type="reset" class="btn reset-btn">Reset</button>
+            <button type="button" class="btn signup-btn">Submit</button>
+
             </div>
             <div class="ans">
               <h4 class="seek"></h4>
             </div>
-          </div>
+          </form>
         </div>
 
         <div class="right">

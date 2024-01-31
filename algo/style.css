@@ -132,7 +132,7 @@ input{
 
  }
  #algo{
-    width: 100px;
+    width: 150px;
     height: 30px;
     cursor: pointer;
 
@@ -178,6 +178,15 @@ input{
     font-family: 'Poppins', sans-serif;
     font-weight: 500;
 
+}
+.btn-group {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+.reset-btn{
+    background-color: rgb(1, 161, 33);
 }
 @media (max-height:400px) {
     .algo-title{
