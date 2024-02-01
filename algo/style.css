@@ -3,12 +3,14 @@
     margin: 0px;
     padding: 0px;
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    scroll-behavior: smooth;
 }
 
 html , body{
     height: 100%;
     width: 100%;
 }
+
 .main{
     height: 100%;
     width: 100%;
@@ -22,44 +24,29 @@ html , body{
 #logo span{
     color: navy;
 }
-nav{
-    height: 60px;
-    width: 100%;
-    border-bottom: 1px solid #dadada;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background-image: linear-gradient(to right ,rgb(252, 252, 252), rgb(192, 192, 244));
-}
-nav i {
-    font-size: 1.2vw;
-    cursor: pointer;
-    display: none;
-   
-}
-.nav-part2{
-    width: 50%;
-    display:flex;
-    align-items: center;
-    justify-content: space-evenly;
 
+.mynav{
+    background-image: linear-gradient(to right ,rgb(252, 252, 252), rgb(192, 192, 244));
+    padding: 5px;
+    border-bottom: 1px solid #dadada;
 }
-nav h2{
-    font-size: 30px;
-    font-weight: 600;
+.mydropdown{
+    font-size: 14px;
+    border:1px solid navy ;
 }
-nav h4{
-    font-size: 14px ;
-    padding: 10px;
+.search{
+    height: 40px;
+    font-size: 14px;
+    border-color: navy;
+ }
+a{
+    text-decoration:none;
     color: navy;
-    font-weight: 500;
-    border-width: 0%;
-    cursor: pointer;
+    
 }
-nav h4:hover{
+a:hover{
     color: crimson;
     transition:linear all  0.5s;
-
 }
 .content{
     height: calc(100% - 60px);
@@ -114,6 +101,7 @@ input{
     width: 250px;
     border: 1px solid navy;
     padding-left: 2px;
+    font-size: 13px;
 
   
 }
@@ -129,15 +117,22 @@ input{
     margin-left: 3px;
     display: none;
     cursor: pointer;
+    font-size: 13px;
 
  }
  #algo{
     width: 150px;
     height: 30px;
     cursor: pointer;
+    font-size: 13px;
 
 }
 .btn{
+    color: navy;
+    border-color:navy ;
+    
+}
+.mybtn{
     /* margin: 1rem; */
     margin-left: 0.5rem;
     width: 4.5rem;
@@ -188,35 +183,25 @@ input{
 .reset-btn{
     background-color: rgb(1, 161, 33);
 }
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* footer */
+.text-center{
+    background-image: linear-gradient(to left ,rgb(252, 252, 252), rgb(192, 192, 244));
+}
 @media (max-height:400px) {
     .algo-title{
         margin-bottom: 1px;
     }
     
 }
-@media (max-width:600px) {
-    nav{
-        height: 60px;
-    }
-
-    nav h2{
-        font-size: 6vw;
-    }
-
-    nav h4{
-        display: none;
-
-    }
-    nav i {
-        display: block;
-        font-size: 6vw;
-        margin-right: 10px;
-       
-    }
-    .nav-part2{
-        justify-content: flex-end;
-    }
-    .content{
+@media (max-width:600px) { 
+   .content{
         flex-wrap: wrap;
     }
 
@@ -237,4 +222,5 @@ input{
     .algo-title{
         margin-bottom: 1rem;
     }
+
 }

@@ -9,6 +9,19 @@ const disk_size = document.getElementById("disk_size");
 
 const chartContainer = document.getElementById("chartContainer");
 
+// barIcon.addEventListener("click" , ()=>{
+//     let nav = document.querySelector(".nav-part2");
+//     if(nav.className === "nav-part2"){
+//         nav.className += "responsive";
+//         console.log("clicked on bar icon");
+//     }
+//     else{
+//         nav.className = "nav-part2";
+//     }
+
+
+// })
+
 class DiskSchedulingAlgorithm {
     FCFS(arr, head) {
         let seek_count = 0;
@@ -498,11 +511,7 @@ submitBtn.addEventListener("click", (event) => {
 
             for(let name of allAlgorithm)
             {
-                let tempMyObj = []
-                // tempMyObj.legendText = name;
-                // tempMyObj.lineColor = colors[name];
-           //     console.log(colors[name]);
-
+                let tempMyObj = [];
                 const record = algo.getDataForAlgorithm(name , data , head , headDirection.value , diskSize);
               
                 for (let i = 0; i < record.length; i++) {
