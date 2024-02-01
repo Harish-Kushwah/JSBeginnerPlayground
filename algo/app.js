@@ -38,7 +38,7 @@ class DiskSchedulingAlgorithm {
             // Accessed track is now new head
             head = cur_track;
 
-            seekInput.innerHTML = "<h4>Total Seek Count : " + seek_count + "</h4>"
+            seekInput.innerHTML = "<p>Total Seek Count : " + seek_count + "</p>"
         }
         return arr;
     }
@@ -112,7 +112,7 @@ class DiskSchedulingAlgorithm {
             }
         }
 
-        seekInput.innerHTML = "<h4>Total Seek Count : " + seek_count + "</h4>"
+        seekInput.innerHTML = "<p>Total Seek Count : " + seek_count + "</p>"
 
         left.reverse()
         const data = [...left, ...right];
@@ -192,7 +192,7 @@ class DiskSchedulingAlgorithm {
             head = cur_track;
         }
 
-        seekInput.innerHTML = "<h4>Total Seek Count : " + seek_count + "</h4>" 
+        seekInput.innerHTML = "<p>Total Seek Count : " + seek_count + "</p>" 
         const data = [ ...right,...left];
         console.log(data);
         return data;
@@ -280,7 +280,7 @@ class DiskSchedulingAlgorithm {
             } 
         } 
 
-        seekInput.innerHTML = "<h4>Total Seek Count : " + seek_count + "</h4>";
+        seekInput.innerHTML = "<p>Total Seek Count : " + seek_count + "</p>";
       
         left.reverse();
         const data = [ ...right,...left];
@@ -363,7 +363,7 @@ class DiskSchedulingAlgorithm {
             head = cur_track;
         }
 
-        seekInput.innerHTML = "<h4>Total Seek Count : " + seek_count + "</h4>" 
+        seekInput.innerHTML = "<p>Total Seek Count : " + seek_count + "</p>" 
         const data = [ ...right,...left];
         console.log(data);
         return data;
@@ -433,7 +433,7 @@ class DiskSchedulingAlgorithm {
         }
 
         let data =  shortestSeekTimeFirst(arr, head , size);
-        seekInput.innerHTML = "<h4>Total Seek Count : " + seek_count + "</h4>" ;
+        seekInput.innerHTML = "<p>Total Seek Count : " + seek_count + "</p>" ;
         return data;
 
     }
