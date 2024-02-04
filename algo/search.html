@@ -13,7 +13,7 @@
     <!-- <script src="sorting.js" ></script> -->
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="sorting.css">
-    <script src="sorting.js" defer></script>
+    <script src="search.js" defer></script>
     <script src='https://kit.fontawesome.com/5db7c9bc47.js' crossorigin='anonymous'></script>
 
 
@@ -70,7 +70,7 @@
           <div class="content">
             <div class="left">
               <form class="form" >
-                <h3 class="algo-title">Sorting Algorithm</h3>
+                <h3 class="algo-title">Searching Algorithm</h3>
                 <div class="inputs">
                   <!-- <label for="">Enter Numbers</label> -->
                   <input type="text" name="numbers" id="numbers" class="num1"  placeholder="Enter comma separated numbers" value="176, 79, 34, 60, 92, 11, 41, 114"/>
@@ -82,20 +82,12 @@
                       
                       <select name="algo" id="algo">
                         <option value="">Select Algorithm</option>
-                        <option value="bubble">Bubble Sort</option>
-                        <option value="selection">Selection Sort</option>
-                        <option value="insertion">Insertion Sort</option>
-                        <!-- <option value="merge">Merge Sort</option> -->
-                        <option value="quick">Quick Sort</option>
-                        <option value="radix">Radix Sort</option>
-                        <!-- <option value="ALL">ALL</option> -->
+                        <option value="linear">Linear Search</option>
+                        <option value="sentinel">Sentinel Search</option>
+                        <option value="binary">Binary Search</option>
+                     
                       </select>
-      
-                      <select name="order" id="order">
-                        <option value="asc">Ascending</option>
-                        <option value="des">Descending</option>
-                      </select>
-      
+                        <input type="text" id="target" placeholder="Enter Target">
                     </div>
       
                   </div>
@@ -139,11 +131,13 @@
               </form>
             </div>
     
-            <div class="right">
+            <div class="right search-page">
               <!-- <section id="chartContainer" class="rotate"></section> -->
              
-              <div id="array-container" class="rotate clearfix">
+              <div id="array-container" class="rotate clearfix search-page-cont search-array-container">
 
+              </div>
+              <div id="info-container" class="rotate clearfix search-page-cont">
               </div>
             </div>
           </div>

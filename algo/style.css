@@ -18,8 +18,9 @@ html , body{
 
 }
 #logo{
-    margin-left: 10px;
+    /* margin-left: 10px; */
     color: crimson;
+    text-align: center;
 }
 #logo span{
     color: navy;
@@ -64,10 +65,15 @@ a:hover{
 
     padding: 7vw 8vw;
      padding: 0px;
+    
 
 }
 .right{
     height: 100%;
+    width: 50%;
+}
+.search-page{
+    height: calc(50% + 10px);
     width: 50%;
 }
 .rotate {
@@ -89,6 +95,7 @@ a:hover{
     justify-content: center;
     flex-direction: column;
     text-align: center;
+    overflow:auto;
  }
 .inputs{
     display: flex;
@@ -205,7 +212,6 @@ input{
         margin-bottom: 1px;
 
     }
-    
 }
 @media (max-width:600px) { 
    .content{
@@ -230,6 +236,10 @@ input{
     .algo-title{
         font-size: 20px;
         margin-bottom: 5px;
+    }
+    .search-page-cont{
+        height: calc(50% - 10px);
+        /* width: 100%; */
     }
 
 }
