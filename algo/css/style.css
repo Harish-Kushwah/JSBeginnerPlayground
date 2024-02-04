@@ -20,7 +20,9 @@ html , body{
 #logo{
     /* margin-left: 10px; */
     color: crimson;
+    margin-top: 5px;
     text-align: center;
+    /* border: 1px solid red; */
 }
 #logo span{
     color: navy;
@@ -29,13 +31,15 @@ html , body{
 .mynav{
     /* display: absolute; */
     background-image: linear-gradient(to right ,rgb(252, 252, 252), rgb(192, 192, 244));
-    padding: 5px;
+    padding: 0px;
     border-bottom: 1px solid #dadada;
+    /* height: 50px; */
     /* top: 0; */
 }
 .mydropdown{
     font-size: 14px;
     border:1px solid navy ;
+    background: transparent;
 }
 .search{
     height: 40px;
@@ -240,6 +244,9 @@ input{
     .search-page-cont{
         height: calc(50% - 10px);
         /* width: 100%; */
+    }
+    .mynav{
+        padding: 5px;
     }
 
 }
