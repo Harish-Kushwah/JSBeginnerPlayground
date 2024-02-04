@@ -140,6 +140,43 @@ async function binarySearch(array, target, speed) {
     }
 }
 
+async function sentinelSearch(array, target, speed) {
+    let n = array.length;
+
+    let found = false;
+    let last = array[n - 1];
+    array[n - 1] = target;
+
+    createBars(array);
+    let i = 0;
+    while (true) {
+        arrayContainer.children[i].children[0].style.backgroundColor = 'red';
+        
+        await new Promise(resolve => setTimeout(resolve, speed));
+        
+        arrayContainer.children[i].children[0].style.backgroundColor = 'blue';
+        addInfo(array[i], target);
+        if (array[i] === target) {
+            break;
+        }
+        i++;
+    }
+
+    array[n - 1] = last;
+    createBars(array);
+
+    if ((i < n - 1) || array[n - 1] === target) {
+        arrayContainer.children[i].children[0].style.backgroundColor = 'green';
+        found = true;
+    }
+    else {
+        found = false;
+    }
+    if (!found)
+        addInfo(array[i], target);
+
+}
+
 start.addEventListener("click", () => {
 
     const target = document.getElementById("target");
@@ -168,6 +205,10 @@ start.addEventListener("click", () => {
             array.sort((a, b) => a - b);
             createBars(array);
             binarySearch(array, Number(target.value), speed);
+        }
+        else if (selectedAlgorithm.value == "sentinel") {
+            // createBars(array);
+            sentinelSearch(array, Number(target.value), speed);
         }
 
     }
