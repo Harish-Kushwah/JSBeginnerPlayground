@@ -26,6 +26,16 @@ specialHeader.innerHTML = `
           <li><a class="dropdown-item" href="search.html">Searching</a></li>
         </ul>
       </li>
+      <li class="nav-item dropdown active">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+          Data Structures
+        </a>
+        <ul class="dropdown-menu mydropdown" aria-labelledby="navbarDropdown">
+          <li><a class="dropdown-item" href="linkedList.html">Linked List</a></li>
+          <li><a class="dropdown-item" href="stack.html">Stack</a></li>
+          <li><a class="dropdown-item" href="queue.html">Queue</a></li>
+        </ul>
+      </li>
       
     </ul>
     <form class="d-flex">
