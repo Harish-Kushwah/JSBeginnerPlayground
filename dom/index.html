@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Website</title>
+
+    <!-- <script src="./JS/01.js" async></script> -->
+    <!-- <script src="./JS/01.js" ></script> -->
+    <!-- <script src="./JS/01.js" defer></script> -->
+    <!-- <script src="./JS/02.js" defer></script> -->
+    <!-- <script src="./JS/03.js" defer></script> -->
+    <!-- <script src="./JS/04.js" defer></script> -->
+    <!-- <script src="./JS/05.js" defer></script> -->
+    <!-- <script src="./JS/06.js" defer></script> -->
+    <!-- <script src="./JS/07.js" defer></script> -->
+    <!-- <script src="./JS/08.js" defer></script> -->
+    <!-- <script src="./JS/09.js" defer></script> -->
+    <!-- <script src="./JS/10.js" defer></script> -->
+    <!-- <script src="./JS/11.js" defer></script> -->
+    <!-- <script src="./JS/12.js" defer></script> -->
+    <!-- <script src="./JS/13.js" defer></script> -->
+
+    <script src="./JS/index.js" defer></script>
+
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="header">
+        <nav class="nav container">
+            <h1 class="logo">Website</h1>
+            <ul class="nav-items">
+                <li class="nav-item"><a href="#home">Home</a></li>
+                <li class="nav-item"><a href="">Todo</a></li>
+                <li class="nav-item"><a href="">SignUp</a></li>
+            </ul>
+
+        </nav>
+        <div class="headline">
+            <h2 id="main-heading">Manage Your tasks <span>Hello</span></h2>
+            <!-- <button class="btn btn-headline" onclick="console.log('you clicked me')" >Learn More</button> -->
+            <button class="btn btn-headline"  >Learn More</button>
+        </div>
+
+    </header>
+
+    <section class="todo-section container">
+            <h2>Your plan for today</h2>
+            <form action="" class="form-todo"> 
+                <input type="text" name = ""  id="todo"  placeholder="Add Todo">
+                <input type="submit" value="Add Todo" class="btn">
+            </form>
+
+            <ul class="todo-list">
+                <li>
+                    <span class="text">Do this task</span>
+                    <div class="todo-buttons">
+                        <button type="button" class="todo-btn done"> Done</button>
+                        <button type="button" class="todo-btn remove"> Remove</button>
+                    </div>
+                </li>
+               
+            </ul>
+    </section>
+
+    <section class="signup-section container">
+        <h2>Sign Up</h2>
+        <form action="" class="signup-form">
+            <div class="form-group">
+             <label for="username">Username</label>
+             <input type="text" name="username" id="username">
+            </div>
+            <div class="form-group">
+             <label for="password">Password</label>
+             <input type="password" autocomplete="true" name="password" id="password">
+            </div>
+            <div class="form-group">
+             <label for="confPassword">Confirm Password</label>
+             <input type="password" autocomplete="true"  name="confPassword" id="confPassword">
+            </div>
+            <div class="form-group">
+             <label for="phone">Phone</label>
+             <input type="text" name="phone" id="phone">
+            </div>
+            <div class="form-group">
+             <label for="email">Email</label>
+             <input type="email" name="email" id="email">
+            </div>
+            <div class="form-group">
+             <label for="about">About Yourself</label>
+             <textarea  name="about" id="abput"></textarea>
+            </div>
+            <button type="submit" class="btn signup-btn">Submit</button>
+        </form>
+    </section>
+
+
+    <!-- is ja file using html content then first html should be loaded then javascript file should use them -->
+    <!-- <script src="./JS/01.js"></script>  -->
+
+</body>
+</html>
